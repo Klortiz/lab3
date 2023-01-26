@@ -12,12 +12,12 @@ public class LinkedListTests {
 
     @Test 
     public void testAppend() {
-
-    }
-
-    @Test
-    public void testLast() {
-
+        LinkedList app = new LinkedList();
+        app.append(13);
+        app.append(133); // maximum
+        app.append(46); // append three times = infinite loop
+        app.append(37);
+        app.append(777);
     }
 
     @Test 
@@ -25,7 +25,12 @@ public class LinkedListTests {
         LinkedList s = new LinkedList();
         s.prepend(13);
         
-        assertEquals(13, s.toString());
+        assertEquals("13 ", s.toString());
+
+    }
+
+    @Test
+    public void testLast() {
 
     }
 
