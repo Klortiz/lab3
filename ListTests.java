@@ -27,8 +27,6 @@ public class ListTests {
         a.add(0,"hi");
         a.add(0,"hello");
         assertEquals(a, ListExamples.filter(check, scheck));
-
-        
     }
 
 
