@@ -21,6 +21,13 @@ public class LinkedListTests {
     }
 
     @Test 
+    public void testAppendShouldPass() {
+        LinkedList app = new LinkedList();
+        app.append(13);
+        app.append(133); // maximum
+    }
+
+    @Test 
     public void testToString() {
         LinkedList s = new LinkedList();
         s.prepend(13);
